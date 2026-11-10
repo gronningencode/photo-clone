@@ -2,11 +2,13 @@ package com.example.vebjorn.photo.clone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 
-@Table("Photo")
+@Table("PHOTO")
 public class Photo {
+    @Id
     private Integer id;
 
     @NotEmpty
